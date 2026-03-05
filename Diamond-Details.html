@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamond Details | Professional Mobile Car Detailing Birmingham</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a0f1e;
+    --navy-mid: #111827;
+    --navy-light: #1a2540;
+    --silver: #c0c8d8;
+    --silver-bright: #e8edf5;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --white: #f5f7fa;
+    --pearl: #e8edf5;
+    --amethyst: #7c5cbf;
+    --sapphire: #2563eb;
+    --diamond: #c0c8d8;
+  }
+
+- { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+background: var(–navy);
+color: var(–silver-bright);
+font-family: ‘Montserrat’, sans-serif;
+font-weight: 300;
+overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 100;
+padding: 1.2rem 3rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(10,15,30,0.92);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(192,200,216,0.1);
+}
+
+.nav-logo {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+text-decoration: none;
+}
+
+.nav-logo img {
+height: 48px;
+width: 48px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.nav-logo-text {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.4rem;
+font-weight: 600;
+color: var(–silver-bright);
+letter-spacing: 0.05em;
+}
+
+.nav-logo-text span { color: var(–gold); }
+
+.nav-links {
+display: flex;
+gap: 2.5rem;
+list-style: none;
+}
+
+.nav-links a {
+color: var(–silver);
+text-decoration: none;
+font-size: 0.75rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(–gold); }
+
+.nav-cta {
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+color: var(–navy) !important;
+padding: 0.6rem 1.5rem;
+border-radius: 2px;
+font-weight: 600 !important;
+}
+
+/* HERO */
+.hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+overflow: hidden;
+padding: 8rem 3rem 4rem;
+}
+
+.hero-bg {
+position: absolute;
+inset: 0;
+background:
+radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+radial-gradient(ellipse at 80% 20%, rgba(37,99,235,0.08) 0%, transparent 50%),
+radial-gradient(ellipse at 60% 80%, rgba(124,92,191,0.06) 0%, transparent 50%);
+}
+
+.hero-grid {
+position: absolute;
+inset: 0;
+background-image:
+linear-gradient(rgba(192,200,216,0.03) 1px, transparent 1px),
+linear-gradient(90deg, rgba(192,200,216,0.03) 1px, transparent 1px);
+background-size: 60px 60px;
+}
+
+.hero-content {
+position: relative;
+text-align: center;
+max-width: 900px;
+}
+
+.hero-badge {
+display: inline-block;
+border: 1px solid rgba(201,168,76,0.4);
+color: var(–gold);
+font-size: 0.7rem;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+padding: 0.4rem 1.2rem;
+margin-bottom: 2rem;
+animation: fadeInDown 0.8s ease both;
+}
+
+.hero-logo {
+width: 140px;
+height: 140px;
+border-radius: 50%;
+object-fit: cover;
+margin: 0 auto 2rem;
+display: block;
+border: 2px solid rgba(201,168,76,0.3);
+box-shadow: 0 0 40px rgba(201,168,76,0.15);
+animation: fadeInUp 0.8s ease 0.1s both;
+}
+
+.hero h1 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(3rem, 8vw, 6rem);
+font-weight: 300;
+line-height: 1;
+margin-bottom: 1rem;
+animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero h1 span {
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.hero-sub {
+font-size: 0.85rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–silver);
+margin-bottom: 1.5rem;
+animation: fadeInUp 0.8s ease 0.3s both;
+}
+
+.hero-desc {
+font-size: 1rem;
+line-height: 1.8;
+color: var(–silver);
+max-width: 600px;
+margin: 0 auto 3rem;
+animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-btns {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+animation: fadeInUp 0.8s ease 0.5s both;
+}
+
+.btn-primary {
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+color: var(–navy);
+padding: 0.9rem 2.5rem;
+font-family: ‘Montserrat’, sans-serif;
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+border: none;
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s;
+border-radius: 2px;
+}
+
+.btn-primary:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+}
+
+.btn-secondary {
+background: transparent;
+color: var(–silver-bright);
+padding: 0.9rem 2.5rem;
+font-family: ‘Montserrat’, sans-serif;
+font-size: 0.75rem;
+font-weight: 600;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+border: 1px solid rgba(192,200,216,0.3);
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s;
+border-radius: 2px;
+}
+
+.btn-secondary:hover {
+border-color: var(–gold);
+color: var(–gold);
+}
+
+.hero-stats {
+display: flex;
+gap: 3rem;
+justify-content: center;
+margin-top: 5rem;
+padding-top: 3rem;
+border-top: 1px solid rgba(192,200,216,0.1);
+animation: fadeInUp 0.8s ease 0.6s both;
+flex-wrap: wrap;
+}
+
+.stat { text-align: center; }
+
+.stat-num {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 2.5rem;
+font-weight: 600;
+color: var(–gold);
+display: block;
+}
+
+.stat-label {
+font-size: 0.65rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–silver);
+}
+
+/* SECTIONS */
+section { padding: 6rem 3rem; }
+
+.section-label {
+font-size: 0.65rem;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 1rem;
+display: block;
+}
+
+.section-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(2rem, 4vw, 3.5rem);
+font-weight: 300;
+line-height: 1.1;
+margin-bottom: 1.5rem;
+}
+
+.section-title span { color: var(–gold); }
+
+.section-desc {
+color: var(–silver);
+line-height: 1.8;
+max-width: 600px;
+font-size: 0.9rem;
+}
+
+/* PACKAGES */
+#packages {
+background: var(–navy-mid);
+position: relative;
+overflow: hidden;
+}
+
+#packages::before {
+content: ‘’;
+position: absolute;
+top: -200px; right: -200px;
+width: 600px; height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 70%);
+pointer-events: none;
+}
+
+.packages-header {
+text-align: center;
+margin-bottom: 4rem;
+}
+
+.packages-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 1.5rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.package-card {
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.1);
+padding: 2.5rem 2rem;
+position: relative;
+transition: all 0.3s;
+border-radius: 4px;
+}
+
+.package-card:hover {
+transform: translateY(-4px);
+border-color: rgba(201,168,76,0.3);
+box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.package-card.featured {
+border-color: var(–gold);
+background: linear-gradient(160deg, var(–navy-light), var(–navy));
+}
+
+.featured-tag {
+position: absolute;
+top: -1px; right: 2rem;
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+color: var(–navy);
+font-size: 0.6rem;
+font-weight: 700;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+padding: 0.3rem 0.8rem;
+border-radius: 0 0 4px 4px;
+}
+
+.package-gem {
+font-size: 2rem;
+margin-bottom: 1rem;
+display: block;
+}
+
+.package-name {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.8rem;
+font-weight: 600;
+margin-bottom: 0.3rem;
+}
+
+.package-name.pearl { color: var(–pearl); }
+.package-name.amethyst { color: #b39ddb; }
+.package-name.sapphire { color: #90caf9; }
+.package-name.diamond { color: var(–gold); }
+
+.package-type {
+font-size: 0.7rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–silver);
+margin-bottom: 2rem;
+}
+
+.package-features {
+list-style: none;
+margin-bottom: 2rem;
+}
+
+.package-features li {
+font-size: 0.82rem;
+color: var(–silver);
+padding: 0.4rem 0;
+border-bottom: 1px solid rgba(192,200,216,0.06);
+display: flex;
+align-items: center;
+gap: 0.6rem;
+line-height: 1.4;
+}
+
+.package-features li::before {
+content: ‘✦’;
+color: var(–gold);
+font-size: 0.5rem;
+flex-shrink: 0;
+}
+
+.package-pricing {
+border-top: 1px solid rgba(192,200,216,0.1);
+padding-top: 1.5rem;
+}
+
+.pricing-label {
+font-size: 0.65rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–silver);
+margin-bottom: 0.8rem;
+}
+
+.pricing-table {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0.4rem;
+}
+
+.price-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 0.75rem;
+padding: 0.3rem 0.5rem;
+background: rgba(192,200,216,0.04);
+border-radius: 2px;
+}
+
+.price-size { color: var(–silver); }
+.price-amount { color: var(–gold); font-weight: 600; }
+
+.package-btn {
+width: 100%;
+margin-top: 1.5rem;
+padding: 0.8rem;
+background: transparent;
+border: 1px solid rgba(192,200,216,0.2);
+color: var(–silver-bright);
+font-family: ‘Montserrat’, sans-serif;
+font-size: 0.7rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.3s;
+border-radius: 2px;
+text-decoration: none;
+display: block;
+text-align: center;
+}
+
+.package-btn:hover, .package-card.featured .package-btn {
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+border-color: var(–gold);
+color: var(–navy);
+font-weight: 700;
+}
+
+/* ADD ONS */
+.addons {
+max-width: 1200px;
+margin: 3rem auto 0;
+padding: 2rem;
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.1);
+border-radius: 4px;
+display: flex;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+.addons-label {
+font-size: 0.65rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–gold);
+white-space: nowrap;
+}
+
+.addon-item {
+display: flex;
+align-items: center;
+gap: 1rem;
+padding: 0.8rem 1.5rem;
+border: 1px solid rgba(192,200,216,0.1);
+border-radius: 2px;
+flex: 1;
+min-width: 200px;
+}
+
+.addon-name { font-size: 0.85rem; flex: 1; }
+
+.addon-prices {
+display: flex;
+flex-direction: column;
+gap: 0.2rem;
+font-size: 0.7rem;
+color: var(–silver);
+}
+
+.addon-prices span { color: var(–gold); font-weight: 600; }
+
+/* TRAVEL */
+#travel {
+background: var(–navy-light);
+}
+
+.travel-inner {
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+
+.travel-zones {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.zone-item {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+padding: 1.2rem 1.5rem;
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.08);
+border-radius: 4px;
+transition: border-color 0.3s;
+}
+
+.zone-item:hover { border-color: rgba(201,168,76,0.3); }
+
+.zone-miles {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.5rem;
+color: var(–gold);
+white-space: nowrap;
+min-width: 80px;
+}
+
+.zone-desc { font-size: 0.82rem; color: var(–silver); flex: 1; }
+
+.zone-price {
+font-weight: 600;
+color: var(–silver-bright);
+white-space: nowrap;
+}
+
+/* HOURS */
+.hours-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+margin-top: 1.5rem;
+}
+
+.hours-item {
+padding: 1.2rem;
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.08);
+border-radius: 4px;
+}
+
+.hours-day {
+font-size: 0.65rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 0.4rem;
+}
+
+.hours-time {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.3rem;
+color: var(–silver-bright);
+}
+
+/* GALLERY */
+#gallery { background: var(–navy-mid); }
+
+.gallery-header { text-align: center; margin-bottom: 3rem; }
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.gallery-item {
+aspect-ratio: 4/3;
+background: var(–navy-light);
+border: 1px solid rgba(192,200,216,0.08);
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 0.5rem;
+color: var(–silver);
+font-size: 0.7rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+transition: all 0.3s;
+}
+
+.gallery-item:hover {
+border-color: rgba(201,168,76,0.2);
+background: var(–navy);
+}
+
+.gallery-icon { font-size: 2rem; opacity: 0.3; }
+
+/* BOOKING */
+#booking {
+background: var(–navy);
+position: relative;
+overflow: hidden;
+}
+
+#booking::before {
+content: ‘’;
+position: absolute;
+bottom: -200px; left: -200px;
+width: 500px; height: 500px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%);
+pointer-events: none;
+}
+
+.booking-inner {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.booking-header { text-align: center; margin-bottom: 3rem; }
+
+.booking-form {
+background: var(–navy-mid);
+border: 1px solid rgba(192,200,216,0.1);
+padding: 3rem;
+border-radius: 4px;
+}
+
+.form-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.2rem;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.form-group.full { grid-column: 1 / -1; }
+
+.form-group label {
+font-size: 0.65rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–silver);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.15);
+color: var(–silver-bright);
+padding: 0.8rem 1rem;
+font-family: ‘Montserrat’, sans-serif;
+font-size: 0.85rem;
+border-radius: 2px;
+outline: none;
+transition: border-color 0.3s;
+-webkit-appearance: none;
+}
+
+.form-group select option { background: var(–navy-mid); }
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+border-color: var(–gold);
+}
+
+.form-group textarea { resize: vertical; min-height: 100px; }
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.2rem;
+margin-top: 1.2rem;
+}
+
+.form-submit {
+margin-top: 2rem;
+text-align: center;
+}
+
+.form-submit button {
+background: linear-gradient(135deg, var(–gold), var(–gold-light));
+color: var(–navy);
+padding: 1rem 3rem;
+font-family: ‘Montserrat’, sans-serif;
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+border: none;
+cursor: pointer;
+border-radius: 2px;
+transition: all 0.3s;
+width: 100%;
+}
+
+.form-submit button:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+}
+
+.form-note {
+font-size: 0.72rem;
+color: var(–silver);
+margin-top: 1rem;
+text-align: center;
+line-height: 1.6;
+}
+
+/* SUCCESS */
+.booking-success {
+display: none;
+text-align: center;
+padding: 3rem;
+background: var(–navy-mid);
+border: 1px solid rgba(201,168,76,0.3);
+border-radius: 4px;
+}
+
+.booking-success.show { display: block; }
+
+.success-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+.success-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 2rem;
+color: var(–gold);
+margin-bottom: 1rem;
+}
+
+.success-desc {
+color: var(–silver);
+line-height: 1.8;
+font-size: 0.9rem;
+}
+
+/* CONTACT */
+#contact {
+background: var(–navy-light);
+}
+
+.contact-inner {
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: start;
+}
+
+.contact-items {
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.contact-item {
+display: flex;
+align-items: center;
+gap: 1.2rem;
+padding: 1.2rem;
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.08);
+border-radius: 4px;
+text-decoration: none;
+transition: all 0.3s;
+}
+
+.contact-item:hover {
+border-color: rgba(201,168,76,0.3);
+transform: translateX(4px);
+}
+
+.contact-icon {
+width: 40px;
+height: 40px;
+background: rgba(201,168,76,0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.1rem;
+flex-shrink: 0;
+}
+
+.contact-info { flex: 1; }
+
+.contact-type {
+font-size: 0.6rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–silver);
+margin-bottom: 0.2rem;
+}
+
+.contact-value {
+color: var(–silver-bright);
+font-size: 0.85rem;
+}
+
+/* SOCIAL */
+.social-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+margin-top: 2rem;
+}
+
+.social-item {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+padding: 1rem;
+background: var(–navy);
+border: 1px solid rgba(192,200,216,0.08);
+border-radius: 4px;
+text-decoration: none;
+transition: all 0.3s;
+color: var(–silver);
+font-size: 0.8rem;
+}
+
+.social-item:hover {
+border-color: rgba(201,168,76,0.3);
+color: var(–gold);
+}
+
+.social-icon { font-size: 1.2rem; }
+
+/* FOOTER */
+footer {
+background: #050810;
+padding: 2rem 3rem;
+border-top: 1px solid rgba(192,200,216,0.08);
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: gap;
+gap: 1rem;
+}
+
+.footer-brand {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 1.1rem;
+color: var(–silver);
+}
+
+.footer-brand span { color: var(–gold); }
+
+.footer-note {
+font-size: 0.7rem;
+color: rgba(192,200,216,0.4);
+letter-spacing: 0.05em;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+nav { padding: 1rem 1.5rem; }
+.nav-links { display: none; }
+section { padding: 4rem 1.5rem; }
+.form-grid, .form-row { grid-template-columns: 1fr; }
+.form-group.full { grid-column: 1; }
+.travel-inner, .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+.gallery-grid { grid-template-columns: repeat(2, 1fr); }
+.booking-form { padding: 1.5rem; }
+footer { flex-direction: column; text-align: center; }
+.hero-stats { gap: 1.5rem; }
+.hours-grid { grid-template-columns: 1fr; }
+}
+
+/* MOBILE NAV */
+.mobile-menu-btn {
+display: none;
+background: none;
+border: 1px solid rgba(192,200,216,0.2);
+color: var(–silver);
+padding: 0.4rem 0.8rem;
+cursor: pointer;
+font-size: 1rem;
+border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+.mobile-menu-btn { display: block; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="/mnt/user-data/uploads/IMG_5296.jpeg" alt="Diamond Details Logo">
+    <span class="nav-logo-text">Diamond <span>Detail</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#travel">Coverage</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="mobile-menu-btn">☰</button>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Professional Mobile Detailing ✦</div>
+    <img src="/mnt/user-data/uploads/IMG_5296.jpeg" alt="Diamond Details" class="hero-logo">
+    <h1>Diamond <span>Detail</span></h1>
+    <p class="hero-sub">Birmingham & Surrounding Areas · Up to 60 Mile Radius</p>
+    <p class="hero-desc">Showroom-quality car detailing brought directly to your driveway. Using professional-grade Autoglym and Auto Finesse products for results that speak for themselves.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-primary">Book Your Detail</a>
+      <a href="#packages" class="btn-secondary">View Packages</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Packages</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">60mi</span>
+        <span class="stat-label">Coverage Radius</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Mobile Service</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Pro</span>
+        <span class="stat-label">Grade Products</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+
+<section id="packages">
+  <div class="packages-header">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title">Choose Your <span>Package</span></h2>
+    <p class="section-desc" style="margin: 0 auto; text-align:center;">Every package uses professional-grade products and is tailored to your vehicle size.</p>
+  </div>
+
+  <div class="packages-grid">
+
+```
+<!-- PEARL -->
+<div class="package-card">
+  <span class="package-gem">🤍</span>
+  <div class="package-name pearl">Pearl</div>
+  <div class="package-type">Exterior Only</div>
+  <ul class="package-features">
+    <li>Snow foam pre-wash (Polar Blast)</li>
+    <li>Two bucket hand wash (Polar Wash)</li>
+    <li>Wheel & tyre clean</li>
+    <li>Exterior window clean</li>
+    <li>Tyre dressing applied</li>
+    <li>Polar Seal protective finish</li>
+  </ul>
+  <div class="package-pricing">
+    <div class="pricing-label">Pricing by vehicle size</div>
+    <div class="pricing-table">
+      <div class="price-item"><span class="price-size">Small</span><span class="price-amount">£15</span></div>
+      <div class="price-item"><span class="price-size">Medium</span><span class="price-amount">£20</span></div>
+      <div class="price-item"><span class="price-size">Large</span><span class="price-amount">£25</span></div>
+      <div class="price-item"><span class="price-size">SUV/4x4</span><span class="price-amount">£30</span></div>
+    </div>
+  </div>
+  <a href="#booking" class="package-btn">Book Pearl</a>
+</div>
+
+<!-- AMETHYST -->
+<div class="package-card">
+  <span class="package-gem">💜</span>
+  <div class="package-name amethyst">Amethyst</div>
+  <div class="package-type">Interior Only</div>
+  <ul class="package-features">
+    <li>Full interior hoover</li>
+    <li>Dashboard & trim clean</li>
+    <li>Door cards wiped down</li>
+    <li>Interior window clean</li>
+    <li>Air vents brushed out</li>
+    <li>Leather clean & protect (if applicable)</li>
+  </ul>
+  <div class="package-pricing">
+    <div class="pricing-label">Pricing by vehicle size</div>
+    <div class="pricing-table">
+      <div class="price-item"><span class="price-size">Small</span><span class="price-amount">£20</span></div>
+      <div class="price-item"><span class="price-size">Medium</span><span class="price-amount">£25</span></div>
+      <div class="price-item"><span class="price-size">Large</span><span class="price-amount">£30</span></div>
+      <div class="price-item"><span class="price-size">SUV/4x4</span><span class="price-amount">£35</span></div>
+    </div>
+  </div>
+  <a href="#booking" class="package-btn">Book Amethyst</a>
+</div>
+
+<!-- SAPPHIRE -->
+<div class="package-card featured">
+  <div class="featured-tag">Most Popular</div>
+  <span class="package-gem">💙</span>
+  <div class="package-name sapphire">Sapphire</div>
+  <div class="package-type">Interior & Exterior</div>
+  <ul class="package-features">
+    <li>Everything in Pearl</li>
+    <li>Everything in Amethyst</li>
+    <li>Full interior & exterior detail</li>
+    <li>Wheel & alloy clean</li>
+    <li>All glass cleaned inside & out</li>
+    <li>Tyre dressing & Polar Seal finish</li>
+  </ul>
+  <div class="package-pricing">
+    <div class="pricing-label">Pricing by vehicle size</div>
+    <div class="pricing-table">
+      <div class="price-item"><span class="price-size">Small</span><span class="price-amount">£35</span></div>
+      <div class="price-item"><span class="price-size">Medium</span><span class="price-amount">£40</span></div>
+      <div class="price-item"><span class="price-size">Large</span><span class="price-amount">£50</span></div>
+      <div class="price-item"><span class="price-size">SUV/4x4</span><span class="price-amount">£60</span></div>
+    </div>
+  </div>
+  <a href="#booking" class="package-btn">Book Sapphire</a>
+</div>
+
+<!-- DIAMOND -->
+<div class="package-card">
+  <span class="package-gem">💎</span>
+  <div class="package-name diamond">Diamond</div>
+  <div class="package-type">Full Premium Detail</div>
+  <ul class="package-features">
+    <li>Everything in Sapphire</li>
+    <li>Magma liquid clay decontamination</li>
+    <li>Ceramic spray coating applied</li>
+    <li>Leather clean & protect</li>
+    <li>Shut lines & door jambs cleaned</li>
+    <li>Polar Seal + Ceramic double protection</li>
+  </ul>
+  <div class="package-pricing">
+    <div class="pricing-label">Pricing by vehicle size</div>
+    <div class="pricing-table">
+      <div class="price-item"><span class="price-size">Small</span><span class="price-amount">£55</span></div>
+      <div class="price-item"><span class="price-size">Medium</span><span class="price-amount">£65</span></div>
+      <div class="price-item"><span class="price-size">Large</span><span class="price-amount">£80</span></div>
+      <div class="price-item"><span class="price-size">SUV/4x4</span><span class="price-amount">£100</span></div>
+    </div>
+  </div>
+  <a href="#booking" class="package-btn">Book Diamond</a>
+</div>
+```
+
+  </div>
+
+  <!-- ADD ON -->
+
+  <div class="addons">
+    <span class="addons-label">Add-on</span>
+    <div class="addon-item">
+      <span style="font-size:1.3rem">🔧</span>
+      <span class="addon-name">Engine Bay Clean</span>
+      <div class="addon-prices">
+        <div>Small <span>£20</span></div>
+        <div>Medium <span>£20</span></div>
+        <div>Large <span>£25</span></div>
+        <div>SUV <span>£25</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL & HOURS -->
+
+<section id="travel">
+  <div class="travel-inner">
+    <div>
+      <span class="section-label">Coverage</span>
+      <h2 class="section-title">We Come <span>To You</span></h2>
+      <p class="section-desc">Based in Birmingham, we cover up to a 60 mile radius. Travel surcharges apply outside 10 miles.</p>
+      <div class="travel-zones" style="margin-top:2rem">
+        <div class="zone-item">
+          <span class="zone-miles">0–10 mi</span>
+          <span class="zone-desc">Birmingham & immediate surroundings</span>
+          <span class="zone-price">Free</span>
+        </div>
+        <div class="zone-item">
+          <span class="zone-miles">10–30 mi</span>
+          <span class="zone-desc">Extended Birmingham area</span>
+          <span class="zone-price">+£10</span>
+        </div>
+        <div class="zone-item">
+          <span class="zone-miles">30–60 mi</span>
+          <span class="zone-desc">Wider Midlands coverage</span>
+          <span class="zone-price">+£20</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="section-label">Availability</span>
+      <h2 class="section-title">Booking <span>Hours</span></h2>
+      <p class="section-desc">We work around you — including evenings and weekends.</p>
+      <div class="hours-grid">
+        <div class="hours-item">
+          <div class="hours-day">Monday – Friday</div>
+          <div class="hours-time">3:00PM – 7:30PM</div>
+        </div>
+        <div class="hours-item">
+          <div class="hours-day">Saturday & Sunday</div>
+          <div class="hours-time">9:00AM – 7:30PM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+  <div class="gallery-header">
+    <span class="section-label">Our Work</span>
+    <h2 class="section-title">Before & <span>After</span></h2>
+    <p class="section-desc" style="margin: 0 auto; text-align:center;">Photos coming soon — check our social media for the latest transformations.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+    <div class="gallery-item"><span class="gallery-icon">📸</span>Coming Soon</div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+
+<section id="booking">
+  <div class="booking-inner">
+    <div class="booking-header">
+      <span class="section-label">Get Started</span>
+      <h2 class="section-title">Book Your <span>Detail</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Fill in the form below and we'll be in touch shortly to confirm your booking.</p>
+    </div>
+
+```
+<div class="booking-form" id="bookingForm">
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Full Name *</label>
+      <input type="text" id="fullName" placeholder="Your full name" required>
+    </div>
+    <div class="form-group">
+      <label>Phone Number *</label>
+      <input type="tel" id="phone" placeholder="Your phone number" required>
+    </div>
+    <div class="form-group">
+      <label>Email Address *</label>
+      <input type="email" id="email" placeholder="Your email address" required>
+    </div>
+    <div class="form-group">
+      <label>Address / Postcode *</label>
+      <input type="text" id="postcode" placeholder="e.g. B1 1AA" required>
+    </div>
+    <div class="form-group">
+      <label>Car Registration *</label>
+      <input type="text" id="carReg" placeholder="e.g. AB12 CDE" required>
+    </div>
+    <div class="form-group">
+      <label>Car Make & Model *</label>
+      <input type="text" id="carModel" placeholder="e.g. Ford Focus" required>
+    </div>
+    <div class="form-group">
+      <label>Car Size *</label>
+      <select id="carSize" required>
+        <option value="">Select size</option>
+        <option>Small (Fiesta, Corsa etc.)</option>
+        <option>Medium (Golf, Focus etc.)</option>
+        <option>Large (BMW 5 Series, Audi A6 etc.)</option>
+        <option>SUV / 4x4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Number of Cars *</label>
+      <select id="numCars" required>
+        <option value="">Select</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4+</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Package *</label>
+      <select id="package" required>
+        <option value="">Select package</option>
+        <option>🤍 Pearl — Exterior Only</option>
+        <option>💜 Amethyst — Interior Only</option>
+        <option>💙 Sapphire — Interior & Exterior</option>
+        <option>💎 Diamond — Full Premium Detail</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Engine Bay Clean Add-on?</label>
+      <select id="engineBay">
+        <option value="No">No thanks</option>
+        <option value="Yes">Yes please (+£20–£25)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Preferred Date *</label>
+      <input type="date" id="prefDate" required>
+    </div>
+    <div class="form-group">
+      <label>Preferred Time *</label>
+      <select id="prefTime" required>
+        <option value="">Select time</option>
+        <optgroup label="Weekdays (Mon–Fri)">
+          <option>3:00 PM</option>
+          <option>3:30 PM</option>
+          <option>4:00 PM</option>
+          <option>4:30 PM</option>
+          <option>5:00 PM</option>
+          <option>5:30 PM</option>
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+        </optgroup>
+        <optgroup label="Weekends (Sat–Sun)">
+          <option>9:00 AM</option>
+          <option>9:30 AM</option>
+          <option>10:00 AM</option>
+          <option>10:30 AM</option>
+          <option>11:00 AM</option>
+          <option>11:30 AM</option>
+          <option>12:00 PM</option>
+          <option>12:30 PM</option>
+          <option>1:00 PM</option>
+          <option>1:30 PM</option>
+          <option>2:00 PM</option>
+          <option>2:30 PM</option>
+          <option>3:00 PM</option>
+          <option>3:30 PM</option>
+          <option>4:00 PM</option>
+          <option>4:30 PM</option>
+          <option>5:00 PM</option>
+          <option>5:30 PM</option>
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="form-group full">
+      <label>Additional Notes</label>
+      <textarea id="notes" placeholder="Any additional information — condition of car, specific areas of concern, access instructions etc."></textarea>
+    </div>
+  </div>
+  <div class="form-submit">
+    <button onclick="submitBooking()">Submit Booking Request ✦</button>
+  </div>
+  <p class="form-note">⚡ You will be contacted shortly to confirm your booking. Booking requests are not confirmed until you hear back from us directly.</p>
+</div>
+
+<div class="booking-success" id="bookingSuccess">
+  <div class="success-icon">💎</div>
+  <div class="success-title">Booking Request Received!</div>
+  <p class="success-desc">Thank you for choosing Diamond Details. We'll be in touch shortly via phone or email to confirm your booking and answer any questions.<br><br>We look forward to making your car shine! ✨</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="contact-inner">
+    <div>
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <p class="section-desc">Have a question or want to discuss a custom package? Reach out directly and we'll get back to you as soon as possible.</p>
+      <div class="contact-items">
+        <a href="/cdn-cgi/l/email-protection#f99d90989496979d9d9c8d9890959b919894b99e94989095d79a9694" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <div class="contact-type">Email</div>
+            <div class="contact-value"><span class="__cf_email__" data-cfemail="85e1ece4e8eaebe1e1e0f1e4ece9e7ede4e8c5e2e8e4ece9abe6eae8">[email&#160;protected]</span></div>
+          </div>
+        </a>
+        <a href="#" class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-info">
+            <div class="contact-type">WhatsApp</div>
+            <div class="contact-value">Your number here</div>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <div class="contact-type">Location</div>
+            <div class="contact-value">Birmingham & up to 60 mile radius</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="section-label">Follow Us</span>
+      <h2 class="section-title">Social <span>Media</span></h2>
+      <p class="section-desc">Follow us for before & after transformations, tips and special offers.</p>
+      <div class="social-grid">
+        <a href="#" class="social-item">
+          <span class="social-icon">📸</span>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="social-item">
+          <span class="social-icon">📘</span>
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social-item">
+          <span class="social-icon">🎵</span>
+          <span>TikTok</span>
+        </a>
+        <a href="#" class="social-item">
+          <span class="social-icon">👻</span>
+          <span>Snapchat</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-brand">Diamond <span>Detail</span> — Birmingham</div>
+  <div class="footer-note">Professional Mobile Car Detailing · Up to 60 Mile Radius · © 2025 Diamond Details</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+// Set min date to today
+const dateInput = document.getElementById(‘prefDate’);
+if(dateInput) {
+const today = new Date().toISOString().split(‘T’)[0];
+dateInput.min = today;
+}
+
+function submitBooking() {
+const required = [‘fullName’,‘phone’,‘email’,‘postcode’,‘carReg’,‘carModel’,‘carSize’,‘numCars’,‘package’,‘prefDate’,‘prefTime’];
+let valid = true;
+
+```
+required.forEach(id => {
+  const el = document.getElementById(id);
+  if(!el.value) {
+    el.style.borderColor = '#ef4444';
+    valid = false;
+  } else {
+    el.style.borderColor = 'rgba(192,200,216,0.15)';
+  }
+});
+
+if(!valid) {
+  alert('Please fill in all required fields before submitting.');
+  return;
+}
+
+docum
+```
